@@ -16,12 +16,14 @@ void processamentoQ02(float *bruto, float *liquido) {
 }
 
 void saidaQ02(float *liquido) {
-    printf("O salario liquido eh R$%.2f", *liquido);
+    system("cls");
+    printf("O salario liquido eh R$%.2f\n\n", *liquido);
 }
 
 void questao02(void) {
-    float salarioBruto, salarioLiq;
 
+    float salarioBruto, salarioLiq;
+    system("cls");
     entradaQ02(&salarioBruto);
     processamentoQ02(&salarioBruto, &salarioLiq);
     saidaQ02(&salarioLiq);
